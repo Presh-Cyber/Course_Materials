@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_deptList"
+            android:icon="@drawable/course"
+            android:title="@string/nav_options_department_lists" />
+        <item
+            android:id="@+id/nav_activity"
+            android:icon="@drawable/activity"
+            android:title="@string/nav_options_activity" />
+        <item
+            android:id="@+id/nav_Tasks"
+            android:icon="@drawable/tasks"
+            android:title="@string/nav_options_tasks" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="@string/nav_options_settings" />
+    </group>
+
+    <item android:title="@string/nav_options_communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/nav_options_share" />
+            <item
+                android:id="@+id/nav_About"
+                android:icon="@drawable/about_us"
+                android:title="@string/nav_options_about" />
+
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/exit"
+                android:title="@string/nav_options_exit" />
+
+        </menu>
+    </item>
+
+</menu>

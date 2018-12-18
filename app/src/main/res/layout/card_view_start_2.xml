@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:background="#4e58ad">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    app:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="410dp"
+    android:layout_marginStart="41dp"
+    android:layout_marginTop="55dp"
+    android:layout_marginEnd="43dp"
+    card_view:cardCornerRadius="5dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:textSize="40dp"
+            android:text="START"
+            android:textAlignment="center" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text=" Enjoy yourself as you journey through your success and apex of your studies"
+            android:textAlignment="center" />
+
+
+    </LinearLayout>
+
+        <Button
+            style="@style/Animation.Design.BottomSheetDialog"
+            android:layout_width="370dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="-32dp"
+            android:layout_marginTop="322dp"
+            android:elevation="5dp"
+            android:text="NEXT" />
+
+    <ImageView
+        android:layout_width="149dp"
+        android:layout_height="150dp"
+        android:layout_gravity="top|start"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/img_wizard_1" />
+
+</android.support.v7.widget.CardView>
+
+    <!--slide dots-->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="92dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="-257dp"
+        android:layout_marginTop="500dp"
+        android:src="@drawable/slide_holes" />
+
+    <!--slide pointer-->
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="-50dp"
+        android:layout_marginTop="534dp"
+        android:src="@drawable/round_pointer"/>
+
+</android.support.v7.widget.LinearLayoutCompat>

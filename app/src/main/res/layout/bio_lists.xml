@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@id/app_bar_layout"
+            android:background="@color/deep_purple_600"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:id="@id/toolbar"
+                android:layout_width="fill_parent"
+                android:layout_height="?actionBarSize"
+                app:contentInsetStartWithNavigation="0.0dip"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@id/lyt_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="70.0dip">
+
+                <View
+                    android:layout_width="70.0dip"
+                    android:layout_height="0.0dip" />
+
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textColor="@android:color/white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BIOLOGY" />
+
+            </LinearLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@id/recyclerView"
+                android:scrollbars="none"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scrollingCache="true" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@id/lyt_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacing_medium"
+                android:layout_centerInParent="true">
+
+                <com.material.components.widget.ViewLoadingDotsFade
+                    android:background="@color/colorAccent"
+                    android:layout_width="50.0dip"
+                    android:layout_height="40.0dip" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_large"
+        android:tint="@android:color/white"
+        app:backgroundTint="@color/colorAccent"
+        app:fabSize="mini"
+        app:layout_anchor="@id/lyt_title"
+        app:layout_anchorGravity="start|bottom|center"
+        app:rippleColor="@android:color/white"
+        app:srcCompat="@drawable/ic_add" />
+
+</android.support.design.widget.CoordinatorLayout>
